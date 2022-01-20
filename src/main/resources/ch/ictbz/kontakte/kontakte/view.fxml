@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.ictbz.kontakte.kontakte.Controller">
+   <children>
+      <Button layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#onButtonDeleteList" text="Liste löschen" />
+      <Button layoutX="392.0" layoutY="36.0" mnemonicParsing="false" onAction="#onButtonImportCSV" text="Import csv" />
+      <Button layoutX="509.0" layoutY="36.0" mnemonicParsing="false" onAction="#onButtonExportCSV" text="Export csv" />
+      <TableView fx:id="tableContacts" layoutX="14.0" layoutY="62.0" prefHeight="324.0" prefWidth="569.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="427.0" text="Neuer Kontakt" />
+      <Label layoutX="40.0" layoutY="466.0" text="Name:" />
+      <Label layoutX="40.0" layoutY="513.0" text="E-Mail:" />
+      <Label layoutX="40.0" layoutY="560.0" text="Phone:" />
+      <TextField fx:id="nameTextField" layoutX="109.0" layoutY="462.0" prefHeight="26.0" prefWidth="433.0" />
+      <TextField fx:id="emailTextField" layoutX="109.0" layoutY="509.0" prefHeight="26.0" prefWidth="433.0" />
+      <TextField fx:id="phoneTextField" layoutX="109.0" layoutY="556.0" prefHeight="26.0" prefWidth="433.0" />
+      <Button layoutX="462.0" layoutY="617.0" mnemonicParsing="false" onAction="#onButtonAdd" text="Hinzufügen" />
+   </children>
+</AnchorPane>
